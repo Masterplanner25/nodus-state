@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nodus-state"
+version = "0.1.0"
+description = "Execution state vocabulary: envelopes, wait conditions, resume specs, and status constants for AI-native systems"
+authors = [{ name = "Shawn Knight" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["state", "execution", "workflow", "ai", "nodus"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/Masterplanner25/nodus-state"
+Repository = "https://github.com/Masterplanner25/nodus-state"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nodus_state*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
