@@ -1,5 +1,7 @@
 # nodus-state
 
+> **Status:** v0.1.0 — published on [PyPI](https://pypi.org/project/nodus-state/).
+
 Execution state vocabulary for AI-native systems. A shared, typed language for describing what an execution is doing, what it's waiting for, how to resume it, and what it produced. Zero required dependencies — pure Python stdlib.
 
 ## Install
